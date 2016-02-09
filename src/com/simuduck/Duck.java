@@ -5,6 +5,13 @@ package com.simuduck;
  */
 public abstract class Duck {
 
+    public Duck(Squeak squeak, NoFly noFly) {
+    }
+
+    public Duck() {
+
+    }
+
     public void quack() {
     System.out.println("quack");
     }
