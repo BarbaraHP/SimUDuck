@@ -6,23 +6,11 @@ package com.simuduck;
 public class MallordDuck extends Duck implements FlyBehaviour, QuackBehaviour {
 
 
-    public MallordDuck(Squeak squeak, NoFly noFly) {
-        super(squeak, noFly);
-    }
-
     public MallordDuck() {
-        super();
+        super(new Quack(), new Fly());
     }
 
     @Override
     public void display() {
-
     }
-
-    @Override
-    public void fly(){
-        System.out.println("fly");
-    }
-
-
 }

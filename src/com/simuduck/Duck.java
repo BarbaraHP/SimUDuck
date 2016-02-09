@@ -5,23 +5,26 @@ package com.simuduck;
  */
 public abstract class Duck {
 
-    public Duck(Squeak squeak, NoFly noFly) {
+    private final QuackBehaviour quackBehaviour;
+    private final FlyBehaviour flyBehaviour;
+
+    public Duck(QuackBehaviour quackBehaviour, FlyBehaviour flyBehaviour) {
+        this.quackBehaviour = quackBehaviour;
+        this.flyBehaviour = flyBehaviour;
     }
 
-    public Duck() {
-
-    }
-
-    public void quack() {
+    public final String quack()  {
+        final String quack = quackBehaviour.quack();
     System.out.println("quack");
+        return quack;
     }
 
     public void swim() {
 
     }
 
-    public void fly() {
-        System.out.println("fly");
+    public final void fly() {
+        flyBehaviour.fly();
     }
 
     public abstract void display() ;

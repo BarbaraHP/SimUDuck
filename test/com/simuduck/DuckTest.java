@@ -8,13 +8,20 @@ import org.junit.Test;
  */
 public class DuckTest {
     @Test
-    public void testMallordDuck () {
+    public void testMallordDuck() {
         MallordDuck duck = new MallordDuck();
         Assert.assertEquals("quack", duck.quack());
     }
-        @Test
-        public void testRubberDuck () {
-            RubberDuck duck = new RubberDuck();
-            Assert.assertEquals("squeak",duck.quack());
+
+    @Test
+    public void testRubberDuck() {
+        RubberDuck duck = new RubberDuck();
+        Assert.assertEquals("squeak", duck.quack());
+    }
+
+    @Test
+    public void testRedHeadDuck() {
+        RedHeadDuck duck = new RedHeadDuck();
+        Assert.assertEquals("quack", duck.quack());
     }
 }

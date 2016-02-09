@@ -5,22 +5,12 @@ package com.simuduck;
  */
 public class RedHeadDuck extends Duck implements FlyBehaviour, QuackBehaviour {
 
-
-    public RedHeadDuck(Squeak squeak, NoFly noFly) {
-        super(squeak, noFly);
-    }
-
     public RedHeadDuck() {
-        super();
+        super(new Quack(), new Fly());
     }
 
     @Override
     public void display() {
-    }
-
-    @Override
-    public void fly(){
-        System.out.println("fly");
     }
 
 }

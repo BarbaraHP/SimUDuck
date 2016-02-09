@@ -10,16 +10,6 @@ public class RubberDuck extends Duck {
     }
 
     @Override
-    public void quack() {
-        System.out.println("tweet");
-    }
-
-    @Override
     public void display() {
-
-    }
-    @Override
-    public void fly() {
-
     }
 }
